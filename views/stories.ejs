@@ -1,0 +1,12 @@
+<%- include('includes/navbar.ejs') %>
+
+<h1>hey</h1>
+<% if(isAuthenticated){%>
+<div class="container">
+    <form action="/poststories" method="get">
+        <button type="submit">Post a story</button>
+    </form>
+<% } %>
+</div>
+</body>
+</html>

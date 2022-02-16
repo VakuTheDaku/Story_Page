@@ -1,0 +1,17 @@
+<%- include('includes/navbar.ejs') %>
+<div class="container">
+    <form action="/poststory" method="post">
+        <div class="form-group mt-4">
+        <label for="title">Story Title:</label>
+        <input type="name" class="form-control" id="title" name="title" placeholder="Title">
+        </div>
+        
+        
+        <div class="form-group mt-4">
+        <label for="textarea">Content:</label>
+        <textarea class="form-control" id="textarea" rows="10" name="content" placeholder="Write your story here"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+    </form>
+</div>
+</body></html>

@@ -1,0 +1,17 @@
+<%- include('includes/navbar.ejs') %>
+<% if (!isAuthenticated) {%>
+      <div class="container mt-2">
+        <div class="jumbotron">
+            <h1 class="display-4">Hey! This is the Home page</h1>
+            <p class="lead">This is a Story Tealling page, where you can register and login, then you can post your stories.</p>
+            <hr class="my-4">
+            <p>It uses node js and mysql</p>
+            <a class="btn btn-primary btn-lg" href="/login" role="button">Log In</a>
+        </div>
+      </div>
+<% } else { %>
+  <h2>Hey! <%= username %>! welcome </h2>
+  <% } %>
+    
+</body>
+</html>
