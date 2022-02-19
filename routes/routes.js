@@ -7,7 +7,7 @@ var User=require('../models/model').User
 const path= require('path')
 const transporter= nodemailer.createTransport(sendgridtransporter({
     auth: {
-        api_key: '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'
+        api_key: 
     }
 }))
 const testdrc = path.join(__dirname,'../views/test.ejs')
